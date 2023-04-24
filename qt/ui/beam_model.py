@@ -74,47 +74,49 @@ class BeamSimplySupported:
 
     # --- Get/Set methods for properties
 
-    def get_a(self):
+    @property
+    def a(self):
         return self.__a
 
-    def set_a(self, v):
+    @a.setter
+    def a(self, v):
         self.__a = self.to_float(v, self.__a)
 
-    def get_b(self):
+    @property
+    def b(self):
         return self.__b
 
-    def set_b(self, v):
+    @b.setter
+    def b(self, v):
         self.__b = self.to_float(v, self.__b)
 
-    def get_P(self):
+    @property
+    def P(self):
         return self.__P
 
-    def set_P(self, v):
+    @P.setter
+    def P(self, v):
         self.__P = self.to_float(v, self.__P)
 
-    def get_L(self):
+    @property
+    def L(self):
         return self.__a + self.__b
 
-    def get_E(self):
+    @property
+    def E(self):
         return self.__E
 
-    def set_E(self, v):
+    @E.setter
+    def E(self, v):
         self.__E = self.to_float(v, self.__E)
 
-    def get_I(self):
+    @property
+    def I(self):
         return self.__I
 
-    def set_I(self, v):
+    @I.setter
+    def I(self, v):
         self.__I = self.to_float(v, self.__I)
-
-    # Properties
-
-    a = property(get_a, set_a)
-    b = property(get_b, set_b)
-    L = property(get_L)
-    P = property(get_P, set_P)
-    E = property(get_E, set_E)
-    I = property(get_I, set_I)
 
 
 if __name__ == "__main__":

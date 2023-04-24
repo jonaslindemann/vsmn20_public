@@ -2,9 +2,9 @@
 
 import sys, os, subprocess, time
 
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
-from PyQt5 import uic
+from qtpy.QtWidgets import *
+from qtpy.QtCore import *
+from qtpy import uic
 
 class ExampleRunner:
     def __init__(self):
@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
 
         self.example_runner = ExampleRunner()
         self.example_runner.find_examples()
-        self.example_runner.run("form.py")
+        #self.example_runner.run("form.py")
 
         row = 0
         max_rows = 20

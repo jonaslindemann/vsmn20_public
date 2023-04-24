@@ -7,10 +7,10 @@ Created on Thu Apr  5 23:42:08 2018
 
 import sys, os
 
-from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QStyle, QSizePolicy
-from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import QSize
-from PyQt5 import uic
+from qtpy.QtWidgets import QMainWindow, QApplication, QFileDialog, QStyle, QSizePolicy
+from qtpy.QtGui import QIcon
+from qtpy.QtCore import QSize
+from qtpy import uic
 
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar

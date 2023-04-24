@@ -7,9 +7,9 @@ Created on Thu Apr  5 23:42:08 2018
 
 import sys
 
-from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QStyle
-from PyQt5.QtGui import QIcon
-from PyQt5 import uic
+from qtpy.QtWidgets import QMainWindow, QApplication, QFileDialog, QStyle
+from qtpy.QtGui import QIcon
+from qtpy import uic
 
 # Matplotlib
 

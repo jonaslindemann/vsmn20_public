@@ -2,7 +2,7 @@
 
 import sys
 
-from PyQt5.QtWidgets import *
+from qtpy.QtWidgets import *
 
 if __name__ == "__main__":
 
