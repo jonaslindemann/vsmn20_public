@@ -2,6 +2,7 @@
 
 import sys
 
+from qtpy.QtCore import Qt
 from qtpy.QtWidgets import *
 from qtpy import uic
 
@@ -20,7 +21,7 @@ class MainWindow(QWidget):
     def init_gui(self):
         """Initialisera gränssnitt"""
 
-        uic.loadUi("form8.ui", self)
+        uic.loadUi("form9.ui", self)
 
         self.press_me_button.setText("My button")
         self.press_me_button.clicked.connect(self.on_button_press)
@@ -30,6 +31,9 @@ class MainWindow(QWidget):
 
 
 if __name__ == '__main__':
+
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+    QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
 
     app = QApplication(sys.argv)
 

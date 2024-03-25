@@ -10,6 +10,7 @@ import sys
 
 from math import *
 
+from qtpy.QtCore import *
 from qtpy.QtWidgets import *
 
 class MyWindow(QWidget):
@@ -71,6 +72,9 @@ if __name__ == '__main__':
 
     # Instantiate application object
 
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+    QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
+    
     app = QApplication(sys.argv)
 
     # Create window

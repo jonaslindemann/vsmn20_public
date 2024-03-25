@@ -7,6 +7,7 @@ Created on Mon Apr 11 09:44:29 2016
 
 import sys
 
+from qtpy.QtCore import Qt
 from qtpy.QtWidgets import *
 from qtpy.QtGui import *
 
