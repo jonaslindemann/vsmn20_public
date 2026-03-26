@@ -21,10 +21,10 @@ class MainWindow(QWidget):
     def init_gui(self):
         """Initialisera gränssnitt"""
 
-        uic.loadUi("form9.ui", self)
+        uic.loadUi("form11.ui", self)
 
-        self.press_me_button.setText("My button")
-        self.press_me_button.clicked.connect(self.on_button_press)
+        self.my_button.setText("My button")
+        self.my_button.clicked.connect(self.on_button_press)
         
     def on_button_press(self):
         print("button pressed")

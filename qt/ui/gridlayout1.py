@@ -8,6 +8,7 @@ Created on Mon Apr 11 09:44:29 2016
 import sys
 
 from qtpy.QtWidgets import *
+from qtpy.QtCore import Qt
 
 class MyWindow(QWidget):
     """Main Window class for our application"""
@@ -56,10 +57,10 @@ class MyWindow(QWidget):
         self.grid.addWidget(self.button8, 2, 1)
         self.grid.addWidget(self.button9, 2, 2)
 
-        self.grid.setContentsMargins(20, 40, 20, 40)
+        self.grid.setContentsMargins(10, 20, 10, 20)
 
-        self.grid.setHorizontalSpacing(20)
-        self.grid.setVerticalSpacing(20)
+        self.grid.setHorizontalSpacing(10)
+        self.grid.setVerticalSpacing(10)
 
         self.grid.setColumnStretch(0, 1)
         self.grid.setColumnStretch(1, 4)
@@ -73,6 +74,9 @@ class MyWindow(QWidget):
         
 
 if __name__ == '__main__':
+
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+    QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
     
     app = QApplication(sys.argv)
     

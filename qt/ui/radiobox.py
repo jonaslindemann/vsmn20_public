@@ -23,8 +23,10 @@ class MyWindow(QWidget):
         
         self.radio_button1 = QRadioButton("Extra allt", self)
         self.radio_button1.move(20,20)
+
         self.radio_button2 = QRadioButton("Mer...", self)
         self.radio_button2.move(20,50)
+        
         self.radio_button1.clicked.connect(self.on_radio_button_clicked)
         self.radio_button2.clicked.connect(self.on_radio_button_clicked)
         

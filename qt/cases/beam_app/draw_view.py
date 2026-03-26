@@ -36,7 +36,7 @@ class DrawView(object):
                            fill=self.fill, ec=self.edge_color, 
                            fc=self.face_color, lw=self.line_width)
 
-        self.axes.add_line(line)
+        #self.axes.add_line(line)
         
     def rect(self, x, y, w, h):
         """Lägg till en rektangel"""

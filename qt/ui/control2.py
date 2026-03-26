@@ -3,7 +3,7 @@
 import sys
 
 from qtpy.QtWidgets import QApplication, QWidget, QPushButton
-from qtpy.QtCore import QCoreApplication
+from qtpy.QtCore import QCoreApplication, Qt
 
 class MyWindow(QWidget):
     def __init__(self):
